@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior: smooth;
+    background-color: #a1eaed;
+  }
+  
+  /* Base navbar */
+nav {
+    background-color: #004d40;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .hamburger {
+    font-size: 1.8rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* 🔁 Responsive behavior */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #004d40;
+      flex-direction: column;
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  }
+  
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .full-screen {
+    min-height: 60vh;
+  }
+  
+  .content {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+  }
+  
+  
+  section h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #00796b;
+  }
+  
+  section p, section li {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  
+  section img {
+    max-width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  form button {
+    padding: 12px 20px;
+    background-color: #00796b;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #00695c;
+  }
+  
+  footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  .content p {
+    font-family: 'Poppins', sans-serif; /* Or any font you like */
+    padding-top: 20px; /* Adjust as needed */
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .content img {
+    width: 100%;
+    max-width: 500px; /* Limits the size on large screens */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+  }
+  
